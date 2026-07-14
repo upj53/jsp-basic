@@ -1,9 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Java Server Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 1</title>
 </head>
 <body>
 <div>
@@ -14,17 +15,14 @@
 <a href="ex4.jsp">예제4</a>&nbsp;&nbsp;
 <a href="ex5.jsp">예제5</a>&nbsp;&nbsp;
 </div>
-    <h1>Java Server Page</h1>
-    <h2>Hello JSP~!</h2>
-    <%
-    String myName = "김성일";
-    int myAge = 17;
-    String mySchool = "성일정보고등학교";
-    %>
     <ul>
-        <li>이름: <%=myName%></li>
-        <li>나이: <%=myAge%></li>
-        <li>출신학교: <%=mySchool%></li>
+        <%
+        for(int i=1; i<=10; i++) {
+        %>
+        <li>리스트 <%=i%></li>
+        <%
+        }
+        %>
     </ul>
 </body>
 </html>
